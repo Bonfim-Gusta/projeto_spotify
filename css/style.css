@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#home{
+    height: 98%;
+}
+
+body{
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+nav.nav-transparent {
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav .navbar-nav .nav-link{
+    color: white;
+}
+
+nav .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+}
+
+nav .navbar-toggler{
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor{
+    width: 1px;
+    background-color: white;
+    margin: 12px 15px;
+}
+
+.capa{
+    text-align: center;
+}
+
+/*Estrutura de conteúdos*/
+#servicos{
+    background: white;
+    padding: 20px 0px
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+#recursos h2, #recursos p{
+    color: white;
+    text-align: justify;
+}
+
+#recursos .texto-recursos{
+    margin: auto 0px;
+}
+
+.albuns{
+    padding: 10px 0px;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px
+}
+
+/*Tipografia*/
+h1{
+    font-weight: 900px;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+section#servicos .textos p{
+    text-align: justify;
+}
+
+section#servicos h2, h3{
+    color: #7c25f8;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.btn-custom{
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.btn-roxo{
+    background: #7c26f8;
+    color: white;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+
+section#albuns h4{
+    margin-top: 30px;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer h6{
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+.redes-sociais{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px){
+    .divisor{
+        border-bottom: 1px solid white;
+        width: 75px;
+        margin: 15px 0px;
+    }
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    section#home h1{
+        font-size: 52px;
+    }
+
+    section#servicos .textos{
+        padding: 12px 10px;
+    }
+
+    section#servicos .textos h2{
+        font-size: 2.8em;
+        margin-bottom: 20px;
+    }
+
+    #recursos .texto-recursos{
+        padding: 30px 20px;
+    }
+
+    .btn-custom{
+        margin: 5px 10px;
+        font-size: 1.1em;
+    }
+
+    header#header nav div.container{
+        padding: 0 20px;
+    }
+
+    .redes-sociais{
+        justify-content: space-around;
+    }
+
+    footer{
+        padding-left: 5px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    section#home h1{
+        font-size: 68px;
+    }
+
+    section#servicos .caixa-albuns{
+        display: flex;
+    }
+
+    #recursos .texto-recursos{
+        padding: 20px 10px;
+    }
+
+    .albuns{
+        align-self: center;
+    }
+
+    .img1{
+        margin-bottom: 40px;
+    }
+
+    section#servicos h2{
+        font-size: 1.925em;
+        margin-bottom: 20px;
+    }
+
+    section#servicos h3{
+        font-size: 1.5em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+
+    .redes-sociais{
+        justify-content: space-around;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    section#home h1{
+        font-size: 76px;
+    }
+
+    section#servicos .albuns{
+        display: flex;
+    }
+
+    section#servicos .img1{
+        margin-bottom: 10px;
+    }
+
+    section#servicos h2{
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+
+    section#servicos .textos h3{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+
+    section#albuns .textos{
+        width: 100%;
+    }
+
+    .redes-sociais{
+        justify-content: space-around;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    section#home h1{
+        font-size: 86px;
+    }
+
+    section#servicos h2{
+        margin-bottom: 25px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section#home h1{
+        font-size: 96px;
+    }
+
+    section#servicos h2{
+        margin-bottom: 35px;
+    }
+}
